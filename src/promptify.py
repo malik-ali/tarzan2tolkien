@@ -14,7 +14,6 @@ class CEFRControlPrompt():
             cefr_in_prompt: int = -1, # -2: no mention, -1: ask, 0: description, k: description + k examples,
             max_example_len: int = 1000
     ) -> None:
-        # TODO by subclass
         if not -1 <= cefr_in_system <= 5:
             raise ValueError("cefr_in_system must be between -1 and 5 (inclusive)")
         if not -2 <= cefr_in_prompt <= 5:
@@ -47,7 +46,6 @@ The descriptions of the proficiency levels are given as follows:
 
 
     def get_system_prompt(self, system_prompt) -> str:
-        # TODO by subclass
         # system_prompt = self.system_prompt
         if self.cefr_in_system == -1:
             return system_prompt

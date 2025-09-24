@@ -293,12 +293,6 @@ def sentlevel_features(text, sent_scorer=None):
     pos_avgs = np.mean(pos_counts_arr, axis=0)
     pos_avgs_d = {f'avg_pos_{k.lower()}': v for k,v in zip(POS_TAGS, pos_avgs)}
 
-    # dep_counts = data_collator(all_stats, 'dep_cnts')
-    # dep_counts_arr = np.stack(list(map(lambda x: counter_to_arr(x, HIGH_FREQ_DEPS),
-    #                                     dep_counts)))
-    # dep_counts_arr = dep_counts_arr / dep_counts_arr.sum(axis=1, keepdims=True) # TODO: proportion
-    # dep_avgs = np.mean(dep_counts_arr, axis=0)
-    # dep_avgs_d = {f'avg_dep_{k.lower()}': v for k,v in zip(HIGH_FREQ_DEPS, dep_avgs)}
     dep_avgs_d = {}
     slen_stats, slen_trace = sent_data_collator(all_stats, 'sent_len')
     avg_sent_len = np.mean(slen_stats)
