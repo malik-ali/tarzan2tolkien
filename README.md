@@ -3,9 +3,13 @@
 
 [Ali Malik](https://malikaliraza.com), [Stephen Mayhew](https://mayhewsw.github.io), [Chris Piech](https://stanford.edu/~cpiech/bio/index.html), and [Klinton Bicknell](https://www.klintonbicknell.com).
 
-Work done at Duolingo. Presented in Findings of the Association for Computational Linguistics: ACL 2024 ([link](https://aclanthology.org/2024.findings-acl.926/), [arXiv](https://arxiv.org/abs/2406.03030)).
+Work done at Duolingo. Presented in Findings of the Association for Computational Linguistics: ACL 2024
 
-Our pretrained models can be found on HuggingFace at: [[]]
+- **Paper**: [https://aclanthology.org/2024.findings-acl.926/](https://aclanthology.org/2024.findings-acl.926)
+- **Arxiv**: [https://arxiv.org/abs/2406.03030](https://arxiv.org/abs/2406.03030)
+
+
+Our main CEFR Aligned Language Model (CaLM) can be found on HuggingFace at: [https://huggingface.co/malikali/CEFR-Aligned-LM](https://huggingface.co/malikali/CEFR-Aligned-LM)
 
 ## Overview of Code
 This repository contains code for the paper "From Tarzan to Tolkien: Controlling the Language Proficiency Level of LLMs for Content Generation". The code is organized into several directories:
