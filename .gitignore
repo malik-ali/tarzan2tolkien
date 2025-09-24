@@ -1,0 +1,10 @@
+.DS_Store
+.ipynb_checkpoints/
+*.egg-info/
+notebooks/wandb
+__pycache__/
+wandb/
+cache/
+data/
+models/
+.Rhistory
